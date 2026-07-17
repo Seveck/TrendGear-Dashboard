@@ -1,0 +1,41 @@
+customer_id,name,email,product_purchased,purchase_date,amount_spent,age,city,payment_method,last_login_date,membership_status
+CUST-0001,Miguel Gómez,miguel.gomez1@mailinator.com,Smartwatch Fit 3,2026-01-29,570.45,65,Medellín,Credit Card,2026-04-09,Platinum
+CUST-0002,Carlos Gómez,carlos.gomez2@mailinator.com,Smartwatch Fit 3,2024-04-05,1271.29,19,Manizales,Debit Card,2024-11-14,Platinum
+CUST-0003,Diego Ramírez,diego.ramirez3@mailinator.com,Laptop Pro 14,2025-08-26,1900.87,28,Pereira,PayPal,2026-01-15,Gold
+CUST-0004,Sofía Martínez,sofia.martinez4@mailinator.com,Smartphone X200,2026-02-20,246.37,24,Bucaramanga,PayPal,2026-05-17,Gold
+CUST-0005,Carlos Castro,carlos.castro5@mailinator.com,Smartphone X200,2025-04-15,2433.21,42,Medellín,PayPal,2026-01-14,Gold
+CUST-0006,Gabriela Martínez,gabriela.martinez6@mailinator.com,Laptop Pro 14,2025-12-22,1658.57,36,Medellín,Debit Card,2026-01-08,Bronze
+CUST-0007,Daniela López,daniela.lopez7@mailinator.com,Teclado Mecánico RGB,2025-04-09,420.02,40,Cúcuta,PayPal,2026-02-28,Bronze
+CUST-0008,Tomás Rivera,tomas.rivera8@mailinator.com,Cargador Rápido 65W,2024-06-24,624.1,47,Pereira,PayPal,2025-12-22,Silver
+CUST-0009,Isabella Vargas,isabella.vargas9@mailinator.com,Smartwatch Fit 3,2026-02-25,2057.35,38,Pereira,PayPal,2026-03-11,Bronze
+CUST-0010,Valentina Silva,valentina.silva10@mailinator.com,Smartwatch Fit 3,2025-08-03,1644.1,43,Santa Marta,Debit Card,2026-01-11,Gold
+CUST-0011,Sofía Martínez,sofia.martinez11@mailinator.com,Cámara Web 4K,2026-02-01,668.64,55,Pereira,Bank Transfer,2026-06-24,Gold
+CUST-0012,Diego Pérez,diego.perez12@mailinator.com,Smartphone X200,2025-06-05,1893.35,25,Cali,Debit Card,2026-02-12,Platinum
+CUST-0013,Tomás Rodríguez,tomas.rodriguez13@mailinator.com,Consola GameBox S,2025-01-29,2490.36,51,Barranquilla,Credit Card,2026-02-23,Bronze
+CUST-0014,Nicolás Ortiz,nicolas.ortiz14@mailinator.com,Smartphone X200,2024-09-30,745.04,28,Santa Marta,Credit Card,2025-09-13,Gold
+CUST-0015,Paula Ortiz,paula.ortiz15@mailinator.com,Smartphone X200,2024-07-01,2178.36,37,Manizales,Debit Card,2025-12-02,Silver
+CUST-0016,Mateo Ortiz,mateo.ortiz16@mailinator.com,Cámara Web 4K,2024-06-14,2297.53,56,Bucaramanga,Bank Transfer,2025-12-18,Bronze
+CUST-0017,Miguel Silva,miguel.silva17@mailinator.com,Smartwatch Fit 3,2025-01-06,159.88,54,Medellín,Credit Card,2025-11-16,Platinum
+CUST-0018,Ana Ortiz,ana.ortiz18@mailinator.com,Auriculares NoiseCancel,2025-06-29,1654.81,53,Cali,PayPal,2025-09-01,Platinum
+CUST-0019,Valentina Silva,valentina.silva19@mailinator.com,Cargador Rápido 65W,2025-07-06,515.65,37,Pereira,PayPal,2026-07-14,Platinum
+CUST-0020,Paula Ramírez,paula.ramirez20@mailinator.com,Smartwatch Fit 3,2024-05-03,175.03,19,Ibagué,Debit Card,2025-01-11,Silver
+CUST-0021,Laura Rodríguez,laura.rodriguez21@mailinator.com,Laptop Pro 14,2025-12-25,584.68,20,Bucaramanga,Credit Card,2026-06-04,Silver
+CUST-0022,Camila Rivera,camila.rivera22@mailinator.com,Cámara Web 4K,2025-05-12,344.65,54,Ibagué,Bank Transfer,2025-08-29,Silver
+CUST-0023,Julián Ortiz,julian.ortiz23@mailinator.com,Smartphone X200,2025-02-20,256.77,45,Bucaramanga,Bank Transfer,2025-09-02,Platinum
+CUST-0024,Mariana Vargas,mariana.vargas24@mailinator.com,Parlante Bluetooth Boom,2026-01-16,1639.17,59,Medellín,Credit Card,2026-01-29,Platinum
+CUST-0025,Isabella Ortiz,isabella.ortiz25@mailinator.com,Smartwatch Fit 3,2026-06-01,491.9,52,Santa Marta,Debit Card,2026-06-07,Platinum
+CUST-0026,Andrés López,andres.lopez26@mailinator.com,Smartphone X200,2025-04-18,1116.73,53,Medellín,Credit Card,2025-08-23,Bronze
+CUST-0027,Ana Silva,ana.silva27@mailinator.com,Auriculares NoiseCancel,2026-02-10,1025.52,48,Cúcuta,Bank Transfer,2026-04-11,Bronze
+CUST-0028,Andrés Hernández,andres.hernandez28@mailinator.com,Tablet Air 11,2024-01-03,2317.46,47,Barranquilla,Bank Transfer,2025-02-05,Platinum
+CUST-0029,Sofía Martínez,sofia.martinez29@mailinator.com,Laptop Pro 14,2024-10-30,1454.67,52,Bogotá,PayPal,2025-06-09,Bronze
+CUST-0030,Carlos Flores,carlos.flores30@mailinator.com,Cámara Web 4K,2025-05-03,407.05,50,Medellín,Debit Card,2026-01-15,Bronze
+CUST-0031,Tomás Rodríguez,tomas.rodriguez31@mailinator.com,Smartwatch Fit 3,2025-11-22,1018.97,54,Cúcuta,Credit Card,2026-06-30,Bronze
+CUST-0032,Sebastián Rivera,sebastian.rivera32@mailinator.com,Cámara Web 4K,2025-08-20,801.85,34,Cúcuta,PayPal,2026-06-05,Silver
+CUST-0033,Camila Hernández,camila.hernandez33@mailinator.com,Parlante Bluetooth Boom,2024-05-14,761.18,38,Medellín,Credit Card,2026-04-01,Platinum
+CUST-0034,Tomás Flores,tomas.flores34@mailinator.com,Cámara Web 4K,2024-04-12,545.47,34,Cali,PayPal,2024-06-26,Bronze
+CUST-0035,Diego García,diego.garcia35@mailinator.com,Monitor UltraWide 34,2024-10-18,2087.01,63,Barranquilla,Credit Card,2025-03-28,Gold
+CUST-0036,Miguel Silva,miguel.silva36@mailinator.com,Smartphone X200,2024-05-17,2226.04,65,Manizales,Debit Card,2025-02-11,Gold
+CUST-0037,Santiago Flores,santiago.flores37@mailinator.com,Smartwatch Fit 3,2024-08-03,1723.73,34,Manizales,Bank Transfer,2025-07-20,Gold
+CUST-0038,Carlos Rodríguez,carlos.rodriguez38@mailinator.com,Tablet Air 11,2025-10-11,125.5,39,Cali,PayPal,2026-05-15,Silver
+CUST-0039,Mariana Torres,mariana.torres39@mailinator.com,Cámara Web 4K,2025-12-23,40.01,22,Cali,Credit Card,2026-04-11,Gold
+CUST-0040,Gabriela Torres,gabriela.torres40@mailinator.com,Auriculares NoiseCancel,2024-05-31,119.89,41,Bogotá,PayPal,2025-08-14,Silver

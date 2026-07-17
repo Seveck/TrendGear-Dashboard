@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendGear Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER: marca + navegación por pestañas -->
+  <header class="header">
+    <div class="header__brand">
+      <span class="header__logo">TG</span>
+      <span class="header__title">TrendGear<span class="header__title-accent">Dashboard</span></span>
+    </div>
+
+    <nav class="nav" id="nav">
+      <button class="nav__link is-active" data-view="resumen">Resumen</button>
+      <button class="nav__link" data-view="clientes">Clientes</button>
+      <button class="nav__link" data-view="estadisticas">Estadísticas</button>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="content">
+
+    <section id="resumen" class="section section--hero view is-active" data-view-panel="resumen">
+      <h1 class="section__heading">Panel de clientes</h1>
+      <p class="section__subheading">Datos sintéticos de TrendGear cargados en tiempo real desde Firebase.</p>
+
+      <div class="kpi-grid" id="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-card__label">Clientes totales</span>
+          <span class="kpi-card__value" id="kpi-total">–</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-card__label">Ingreso total</span>
+          <span class="kpi-card__value" id="kpi-revenue">–</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-card__label">Ticket promedio</span>
+          <span class="kpi-card__value" id="kpi-avg">–</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-card__label">Edad promedio</span>
+          <span class="kpi-card__value" id="kpi-age">–</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="clientes" class="section table-section view" data-view-panel="clientes">
+      <div class="section__intro">
+        <h2 class="section__heading section__heading--sm">Clientes</h2>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Buscar por nombre, email, ciudad o producto…"
+          aria-label="Buscar clientes"
+        />
+      </div>
+
+      <div class="table-wrapper">
+        <div class="table-scroll">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Email</th>
+                <th>Producto</th>
+                <th>Fecha de compra</th>
+                <th>Monto</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Método de pago</th>
+                <th>Último login</th>
+                <th>Membresía</th>
+              </tr>
+            </thead>
+            <tbody id="customers-tbody">
+              <!-- Filas inyectadas dinámicamente por app.js -->
+            </tbody>
+          </table>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos clientes que coincidan con tu búsqueda.</p>
+      </div>
+    </section>
+
+    <section id="estadisticas" class="section stats-section view" data-view-panel="estadisticas">
+      <h2 class="section__heading section__heading--sm">Distribución por membresía</h2>
+      <div class="membership-bars" id="membership-bars">
+        <!-- Barras inyectadas dinámicamente por app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>TrendGear © 2026 — Datos sintéticos con fines de demostración.</p>
+    <p id="last-sync" class="footer__sync">Sincronizando con Firebase…</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
