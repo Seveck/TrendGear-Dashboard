@@ -1,50 +1,58 @@
-Actúa como un desarrollador frontend senior y diseñador UX/UI experto. Quiero que me ayudes a estructurar y programar mi portafolio web personal. Para que el resultado sea perfecto, te comparto detalladamente mi perfil, mis habilidades, mis proyectos y mis preferencias de diseño:
+Actúa como un Consultor Senior en Transformación Digital y Desarrollador Full Stack[cite: 1]. Necesito que me ayudes a desarrollar de extremo a extremo el proyecto "TrendGear Dashboard", el cual consiste en transitar desde la creación de un dataset sintético optimizado hasta su visualización funcional en una interfaz web dinámica conectada a Firebase[cite: 1].
+
+Debes guiarme y generar el código necesario cumpliendo estrictamente con las siguientes tres fases de desarrollo[cite: 1]:
 
 ---
 
-### 1. Sobre Mí (Perfil Profesional)
-*   **Nombre:** Juan Manuel Gouveia Ortiz.
-*   **Estado actual:** Actualmente me encuentro en formación para ser desarrollador de software en Campuslands (evita decir que ya soy técnico graduado, estoy en etapa de aprendizaje y crecimiento continuo).
-*   **Idiomas:** Español (nativo) e Inglés (nivel B1+).
-*   **Intereses:** Me apasiona resolver problemas lógicos, enfrentar retos de código y aprender constantemente nuevas tecnologías.
+### FASE I: INGENIERÍA Y MODELADO DE DATOS (Dataset Sintético)
+Necesito generar un prototipo de información estructurado en formato PSV (Pipe-Separated Values) para evitar conflictos con comas en nombres o ciudades[cite: 1]. El dataset simulado debe representar operaciones de E-commerce para la tienda tecnológica "TrendGear"[cite: 1].
+
+1.  **Atributos obligatorios del esquema (11 columnas):**
+    *   **Customer ID:** Identificador único para cada registro[cite: 1].
+    *   **Name:** Nombre del cliente para personalización[cite: 1].
+    *   **Email:** Contacto utilizando dominios de prueba seguros (ej. mailinator.com o example.com)[cite: 1].
+    *   **Product Purchased:** Artículo tecnológico adquirido[cite: 1].
+    *   **Purchase Date:** Fecha de transacción en formato ISO YYYY-MM-DD[cite: 1].
+    *   **Amount Spent ($):** Valor numérico de la compra[cite: 1].
+    *   **Age:** Edad del cliente[cite: 1].
+    *   **City:** Ubicación geográfica para logística[cite: 1].
+    *   **Payment Method:** Método de pago normalizado (ej. "Credit Card")[cite: 1].
+    *   **Last Login Date:** Fecha de última actividad en formato ISO[cite: 1].
+    *   **Membership Status:** Nivel de lealtad del cliente[cite: 1].
+
+2.  **Reglas estrictas de validación de integridad:**
+    *   Rango de edad válido únicamente entre 13 y 100 años[cite: 1].
+    *   Montos financieros de compra deben ser mayores o iguales a cero ($ >= 0)[cite: 1].
+    *   La fecha de compra ("Purchase Date") debe ser anterior o igual al último inicio de sesión ("Last Login Date"), evitando cualquier fecha futura[cite: 1].
+    *   Absoluta unicidad en los IDs de usuario[cite: 1].
+    *   Valores categóricos perfectamente normalizados para evitar duplicidades por discrepancias de caja (ej. usar "Credit Card" de manera consistente)[cite: 1].
+
+3.  **Entregable de esta fase:** Un script de Python que automatice la generación de este dataset sintético controlando las distribuciones estadísticas, listo para cargarse en Firebase Realtime Database[cite: 1].
 
 ---
 
-### 2. Stack Tecnológico
-Domino y quiero que se destaquen las siguientes herramientas en mi portafolio:
-*   **Lenguajes:** Python, HTML5, CSS3 y JavaScript (JS).
-*   **Herramientas y Metodologías:** Git, GitHub y metodologías ágiles (Scrum).
+### FASE II: MAQUETACIÓN ÁGIL Y DISEÑO UI/UX
+Diseña la interfaz del Dashboard de TrendGear bajo una arquitectura de código segregado, separando estrictamente los archivos de HTML, CSS y JavaScript[cite: 1]. El diseño debe seguir estas directrices estéticas[cite: 1]:
+
+*   **Esquema de Colores:** Fondo oscuro tecnológico (#1E1E1E) con un color de acento azul (#007BFF) para llamadas a la acción y botones[cite: 1].
+*   **Tipografía:** Familia tipográfica Roboto para máxima legibilidad de los datos numéricos[cite: 1].
+*   **Estructura del Layout:** Cabecera (Header), área de contenido principal (Main) y pie de página (Footer)[cite: 1].
+*   **Navegación:** Menú completamente responsivo que se transforme en un sistema "hamburguesa" interactivo en dispositivos móviles[cite: 1].
+*   **Contenedores de Datos:** Diseña las tarjetas (cards) y tablas dinámicas preparadas para recibir la inyección de datos desde el frontend[cite: 1].
 
 ---
 
-### 3. Mis Proyectos Principales (A incluir en el portafolio)
-Quiero que cada proyecto tenga una tarjeta (card) interactiva con su descripción técnica:
+### FASE III: LÓGICA DE INTEGRACIÓN CON FIREBASE
+Desarrolla el script de JavaScript (JS vanilla) encargado de dar dinamismo a la interfaz mediante la inyección del dataset en el DOM[cite: 1]:
 
-1.  **Patitas Felices**
-    *   **Descripción:** Plataforma web responsive y multi-página diseñada para un refugio de animales.
-    *   **Tecnologías:** HTML, CSS y JavaScript.
-    *   **Enlace al repositorio:** https://github.com/Seveck/Patitas-felices
-
-2.  **Sistema de Gestión de Producción ACME**
-    *   **Descripción:** Sistema de gestión de producción que incluye un login seguro, control de inventario y flujos de trabajo.
-    *   **Tecnologías:** HTML, CSS, JavaScript y Web Components.
-
-3.  **Sistema de Gestión de Biblioteca (Python)**
-    *   **Descripción:** Software de consola/backend para la administración de libros y usuarios, enfocado en la robustez del manejo de datos.
-    *   **Tecnologías:** Python, con validación estricta de archivos JSON y reporte detallado de errores.
+1.  **Fetch de Datos:** Implementa una función asíncrona (fetch) que apunte directamente a la URL de Firebase Realtime Database donde se aloja el dataset sintético[cite: 1].
+2.  **Lógica de Renderizado:** Recorre el objeto de datos (mediante bucles como `forEach`) para generar plantillas dinámicas (Template Literals) de HTML e inyectarlas dinámicamente en los contenedores del Dashboard[cite: 1].
+3.  **Formateo de Datos:** Asegúrate de que los montos financieros se muestren correctamente con su símbolo de moneda ($) y los decimales adecuados[cite: 1].
+4.  **Control de Errores:** Implementa una estructura robusta para capturar y reportar errores de conexión o asincronía en la consola[cite: 1].
 
 ---
 
-### 4. Directrices de Diseño y Estética
-Quiero que la web refleje mi personalidad y estilo de desarrollo. Sigue estrictamente estas pautas visuales:
-*   **Estilo General:** Minimalista, moderno y limpio. Nada de interfaces saturadas.
-*   **Paleta de Colores:** Tonos oscuros o pasteles que sean sumamente amigables con la vista (eye-friendly), evitando contrastes chillones.
-*   **Efectos Visuales:** Quiero un fondo dinámico pero sutil utilizando animaciones fluidas como "Fluid Gradient" o "Liquid Wave" mediante CSS avanzado o Canvas/JS, asegurando transiciones suaves que no afecten el rendimiento.
-*   **Interactividad:** Usa JavaScript para dar vida a la interfaz (efectos de scroll, filtrado de proyectos, transiciones fluidas de las secciones y animaciones de carga).
-
----
-
-### Lo que necesito de ti en esta primera respuesta:
-1.  La propuesta de estructura de archivos del proyecto (arquitectura limpia).
-2.  El código HTML base (semántico y bien estructurado) y el JavaScript necesario para la interactividad y las animaciones fluidas del fondo.
-3.  El código CSS moderno (usando variables, Flexbox/Grid y las animaciones para el efecto "Fluid Gradient / Liquid Wave").
+### Lo que necesito que generes en tu primera respuesta:
+1.  El **script de Python** detallado para generar el dataset de prueba con las validaciones requeridas[cite: 1].
+2.  La **arquitectura de archivos** recomendada para el frontend[cite: 1].
+3.  El código **HTML5 semántico**, el archivo **CSS modular** (con variables y diseño responsivo) y el archivo **JavaScript** para la conexión asíncrona a Firebase y renderizado de tarjetas[cite: 1].
