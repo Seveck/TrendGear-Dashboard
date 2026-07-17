@@ -1,8 +1,3 @@
-Actúa como un Consultor Senior en Transformación Digital y Desarrollador Full Stack[cite: 1]. Necesito que me ayudes a desarrollar de extremo a extremo el proyecto "TrendGear Dashboard", el cual consiste en transitar desde la creación de un dataset sintético optimizado hasta su visualización funcional en una interfaz web dinámica conectada a Firebase[cite: 1].
-
-Debes guiarme y generar el código necesario cumpliendo estrictamente con las siguientes tres fases de desarrollo[cite: 1]:
-
----
 
 ### FASE I: INGENIERÍA Y MODELADO DE DATOS (Dataset Sintético)
 Necesito generar un prototipo de información estructurado en formato PSV (Pipe-Separated Values) para evitar conflictos con comas en nombres o ciudades[cite: 1]. El dataset simulado debe representar operaciones de E-commerce para la tienda tecnológica "TrendGear"[cite: 1].
